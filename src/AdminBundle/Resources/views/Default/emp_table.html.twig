@@ -1,0 +1,22 @@
+
+<table class="table table-responsive table-bordered">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Employee Name</th>
+        <th>Action</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for emp in emp_info %}
+        <tr>
+            <td>{{ emp.employeeId }}</td>
+            <td>{{ emp.employeename }}</td>
+            <td>
+                <a onclick="delete_data()">Delete</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

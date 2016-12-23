@@ -1,0 +1,19 @@
+admin_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AdminBundle:Default:index }
+
+lucky_number:
+    path: /lucky/number
+    defaults: { _controller: AdminBundle:Lucky:index }
+
+add_employee:
+    path: /add_emp
+    defaults: { _controller: AdminBundle:Default:create }
+
+delete_employee:
+    path: /delete_emp/{employee_id}
+    defaults: { _controller: AdminBundle:Default:deleteEmployee }
+
+view_data:
+    path: /
+    defaults: { _controller: AdminBundle:Default:showData }
